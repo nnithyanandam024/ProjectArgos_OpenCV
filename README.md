@@ -127,12 +127,22 @@ npm install
 ## Running the Project
 
 ### 1. Start the Backend
+
+**Command Prompt / Bash:**
 ```bash
 cd backend
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
+**PowerShell:**
+```powershell
+cd backend
+python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
 ### 2. Start the Frontend
+
+**Command Prompt / Bash / PowerShell:**
 ```bash
 cd frontend
 npm run dev

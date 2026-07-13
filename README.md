@@ -51,7 +51,7 @@ Project Argos is a full-stack, real-time campus security platform built entirely
 
 ---
 
-## System Architecture
+## System Architecture .
 
 ```
 Webcam (640×480)

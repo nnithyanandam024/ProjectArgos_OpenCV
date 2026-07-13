@@ -1,24 +1,23 @@
 import React from 'react';
 
-export default function Navbar({ tab, setTab, riskScore, incidentCount }) {
-  const tabs = [
-    { id: 'dashboard', label: 'Dashboard' },
-    { id: 'live',      label: 'Live Monitor' },
-    { id: 'incidents', label: 'Incident Log' },
-  ];
+const TABS = [
+  { id: 'dashboard', label: 'Dashboard' },
+  { id: 'live',      label: 'Live Monitor' },
+  { id: 'incidents', label: 'Incident Log' },
+];
 
+export default function Navbar({ tab, setTab, riskScore = 0, incidentCount = 0 }) {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <div className="logo-icon">A</div>
         <div>
-          <span className="brand-name">Project Argos</span>
-          <span className="brand-sub">AI Campus Guardian</span>
+          <div className="brand-name">Project Argos</div>
+          <div className="brand-sub">Campus Guardian</div>
         </div>
       </div>
 
       <div className="navbar-tabs">
-        {tabs.map(t => (
+        {TABS.map(t => (
           <button
             key={t.id}
             className={`tab-btn ${tab === t.id ? 'active' : ''}`}
@@ -26,20 +25,17 @@ export default function Navbar({ tab, setTab, riskScore, incidentCount }) {
           >
             {t.label}
             {t.id === 'incidents' && incidentCount > 0 && (
-              <span style={{
-                marginLeft: 6, background: '#f87171', color: '#fff',
-                borderRadius: '99px', padding: '1px 7px', fontSize: 11, fontWeight: 700,
-              }}>
-                {incidentCount}
-              </span>
+              <span className="incident-badge">{incidentCount}</span>
             )}
           </button>
         ))}
       </div>
 
-      <div className="navbar-status">
-        <span className="dot" />
-        SYSTEM ONLINE
+      <div className="navbar-right">
+        <div className="status-chip">
+          <span className="status-dot" />
+          System Online
+        </div>
       </div>
     </nav>
   );

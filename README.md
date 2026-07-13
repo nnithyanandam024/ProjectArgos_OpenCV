@@ -1,4 +1,4 @@
-# 🛡 Project Argos — AI Campus Guardian
+#Project Argos — AI Campus Guardian
 
 > **HackZen 2026 Open Challenge Submission**
 > 24-hour Computer Vision Hackathon

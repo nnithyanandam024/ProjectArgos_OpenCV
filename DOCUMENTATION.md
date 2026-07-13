@@ -6,11 +6,11 @@
 ---
 
 ## Team Details
-* **Team Name:** [Enter Team Name Here]
+* **Team Name:** DEVNEST
 * **Team Members:**
-  * Member 1: [Enter Name / Roll Number / Email]
-  * Member 2: [Enter Name / Roll Number / Email]
-  * Member 3: [Enter Name / Roll Number / Email]
+  * **NITHYANANDAM N** (7376242IT237) — nithyanandamn.it24@bitsathy.ac.in
+  * **MITHUN R S** (7376242IT218) — mithunrs.it24@bitsathy.ac.in
+  * **SABAREESH S S** (7376242IT279) — sabareeshss.it24@bitsathy.ac.in
 
 ---
 
